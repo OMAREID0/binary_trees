@@ -4,7 +4,8 @@
  * @parent: pointer to the parent of the noe.
  * @value: value to store.
  *
- * @Returns: the adress of the created left node, otherwisw NULL.
+ * @Returns: the adress of the created left node.
+ * OR: NULL if failed.
  */
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 {
