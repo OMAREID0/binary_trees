@@ -12,10 +12,10 @@
  */
 struct binary_tree_s
 {
-    int n;
-    struct binary_tree_s *parent;
-    struct binary_tree_s *left;
-    struct binary_tree_s *right;
+int n;
+struct binary_tree_s *parent;
+struct binary_tree_s *left;
+struct binary_tree_s *right;
 };
 
 typedef struct binary_tree_s binary_tree_t;
@@ -42,7 +42,8 @@ binary_tree_t *binary_tree_uncle(binary_tree_t *node);
 unsigned char is_leaf(const binary_tree_t *node);
 const binary_tree_t *get_leaf(const binary_tree_t *tree);
 int is_full_recursive(const binary_tree_t *tree);
-int is_perfect_recursive(const binary_tree_t *tree, size_t leaf_depth, size_t level);
+int is_perfect_recursive(const binary_tree_t *tree,
+size_t leaf_depth, size_t level);
 
 
 
